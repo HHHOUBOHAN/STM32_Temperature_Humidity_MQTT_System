@@ -1,10 +1,10 @@
-# Web所有文件完全不参与统计
+# 前端网页代码不参与语言统计
 Web/** linguist-vendored=true
-# 硬件全部排除
+# 硬件原理图、资料不计入统计
 Hardware/** linguist-vendored=true
-# 固件强制归类C语言
+
+# 强制把Firmware下所有文件识别为C语言
 Firmware/** linguist-language=C
-# 兜底：仓库里所有JS文件全部不计入统计
+
+# 兜底：仓库其余位置的JS全部忽略
 *.js linguist-vendored=true
-# 防止固件内有JS被误屏蔽，固件内部JS强制归C
-Firmware/**/*.js linguist-vendored=false linguist-language=C
