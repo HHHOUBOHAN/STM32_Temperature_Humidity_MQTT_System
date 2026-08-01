@@ -1,10 +1,11 @@
-# 前端网页代码不参与语言统计
-Web/** linguist-vendored=true
-# 硬件原理图、资料不计入统计
-Hardware/** linguist-vendored=true
+Firmware/**/*.c linguist-language=C
+Firmware/**/*.h linguist-language=C
 
-# 强制把Firmware下所有文件识别为C语言
-Firmware/** linguist-language=C
+Hardware/** linguist-vendored
+Web/** linguist-vendored
+*.sch linguist-vendored
+*.pcb linguist-vendored
 
-# 兜底：仓库其余位置的JS全部忽略
-*.js linguist-vendored=true
+*.js linguist-vendored
+*.html linguist-vendored
+*.css linguist-vendored
